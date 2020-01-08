@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:layout_below="@+id/name"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="LOGIN" />
+
+    <Button
+        android:id="@+id/viewall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+
+        android:layout_centerHorizontal="true"
+        android:text="View All stored passwords" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="Remember my password"
+        android:id="@+id/checkbox"
+        android:layout_below="@id/login"/>
+
+
+
+</RelativeLayout>
